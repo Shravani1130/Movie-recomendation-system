@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineSuggest - Movie Recommendation System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>CineSuggest</h1>
+            <p class="subtitle">Discover your next favorite movie with our intelligent recommendation system</p>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search for movies...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title"><i class="fas fa-star"></i> Top Recommendations</h2>
+        <div class="recommendation-filters">
+            <button class="filter-btn active" data-filter="all">All Movies</button>
+            <button class="filter-btn" data-filter="action">Action</button>
+            <button class="filter-btn" data-filter="comedy">Comedy</button>
+            <button class="filter-btn" data-filter="drama">Drama</button>
+            <button class="filter-btn" data-filter="sci-fi">Sci-Fi</button>
+        </div>
+        <div class="movies-grid" id="recommendations">
+            <!-- Movie cards will be populated by JavaScript -->
+        </div>
+
+        <h2 class="section-title"><i class="fas fa-fire"></i> Trending Now</h2>
+        <div class="movies-grid" id="trending">
+            <!-- Trending movies will be populated by JavaScript -->
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2023 CineSuggest Movie Recommendation System | Made with ❤️ for movie lovers</p>
+    </footer>
+
+    <script src="movie.js"></script>
+</body>
+</html>
